@@ -8,6 +8,7 @@ import {
   LogOut,
   Moon,
   Sun,
+  UploadCloud,
   Users,
 } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
