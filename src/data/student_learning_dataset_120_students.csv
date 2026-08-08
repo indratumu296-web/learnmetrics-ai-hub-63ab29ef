@@ -1,0 +1,121 @@
+student_id,student_name,grade,class_name,subject,skill,assignment_name,assignment_date,score,max_score,percentage,mastery_level,questions_attempted,questions_correct,questions_incorrect,missed_facts,practice_completed,attendance_percentage,weekly_progress,needs_attention,last_activity_date,test_count,average_score,progress_percentage
+S0001,Arjun Reddy,Grade 12,A,Social Studies,Physics,Assessment 1,2026-02-05,92,100,92,Advanced,28,25,3,Fractions,45%,77,64%,No,2026-02-16,6,75.0,92%
+S0002,Indra Gupta,Grade 11,A,Computer Science,Grammar,Assessment 5,2026-07-08,83,100,83,Proficient,20,16,4,Fractions,88%,87,62%,No,2026-07-17,15,89.0,86%
+S0003,Rahul Verma,Grade 11,A,English,Data Analysis,Assessment 10,2026-02-05,66,100,66,Developing,28,18,10,Equations,91%,74,63%,Yes,2026-02-07,3,82.0,66%
+S0004,Rohit Gupta,Grade 10,C,Science,Geometry,Assessment 1,2026-06-19,52,100,52,Beginning,49,25,24,Graphs,89%,82,55%,Yes,2026-06-29,7,68.5,63%
+S0005,Aditya Patel,Grade 10,B,Science,Python Basics,Assessment 2,2026-04-13,100,100,100,Advanced,23,23,0,Maps,80%,82,67%,No,2026-04-16,5,89.5,85%
+S0006,Akhil Patel,Grade 10,A,Science,Algebra,Assessment 6,2026-06-01,55,100,55,Beginning,34,18,16,Reading Comprehension,57%,82,67%,Yes,2026-06-05,4,72.5,89%
+S0007,Ram Das,Grade 9,B,Science,Writing,Assessment 9,2026-06-23,90,100,90,Advanced,30,27,3,Chemical Reactions,56%,76,91%,No,2026-07-01,14,85.5,70%
+S0008,Harsha Verma,Grade 8,A,Science,Reading,Assessment 7,2026-05-16,82,100,82,Proficient,32,26,6,Maps,44%,81,64%,No,2026-05-18,9,70.0,77%
+S0009,Meera Das,Grade 12,B,English,Geometry,Assessment 5,2026-02-08,74,100,74,Developing,36,26,10,Reading Comprehension,50%,78,85%,No,2026-02-19,10,62.0,88%
+S0010,Aarav Rao,Grade 12,C,Science,Reading,Assessment 6,2026-06-19,77,100,77,Proficient,44,33,11,Grammar,74%,75,82%,No,2026-06-24,15,66.5,100%
+S0011,Nikhil Reddy,Grade 8,A,Social Studies,Geometry,Assessment 2,2026-03-29,83,100,83,Proficient,30,24,6,Data Types,92%,85,51%,No,2026-04-02,4,70.0,68%
+S0012,Akhil Sharma,Grade 12,B,Science,History,Assessment 4,2026-05-25,53,100,53,Beginning,41,21,20,Equations,65%,85,85%,Yes,2026-06-08,13,56.5,61%
+S0013,Sneha Naidu,Grade 12,C,Science,Grammar,Assessment 4,2026-04-06,78,100,78,Proficient,34,26,8,Fractions,44%,73,65%,Yes,2026-04-07,14,71.0,49%
+S0014,Vihaan Patel,Grade 11,A,Social Studies,Reading,Assessment 10,2026-03-11,49,100,49,Beginning,48,23,25,Maps,70%,71,71%,Yes,2026-03-16,6,51.5,77%
+S0015,Varun Verma,Grade 11,C,Mathematics,Geometry,Assessment 1,2026-04-28,57,100,57,Beginning,23,13,10,Reading Comprehension,86%,73,92%,Yes,2026-05-05,8,67.0,67%
+S0016,Arjun Patel,Grade 11,A,Mathematics,Chemistry,Assessment 9,2026-02-25,57,100,57,Beginning,26,14,12,Loops,43%,87,78%,Yes,2026-03-02,13,57.5,72%
+S0017,Akhil Reddy,Grade 9,B,Mathematics,Reading,Assessment 7,2026-05-14,50,100,50,Beginning,49,24,25,Fractions,64%,94,65%,Yes,2026-05-22,7,55.0,71%
+S0018,Rohit Rao,Grade 11,A,Science,Python Basics,Assessment 4,2026-06-28,72,100,72,Developing,42,30,12,Fractions,77%,100,96%,No,2026-07-10,14,86.0,80%
+S0019,Akhil Reddy,Grade 12,A,Mathematics,History,Assessment 2,2026-05-18,92,100,92,Advanced,30,27,3,Grammar,44%,71,53%,Yes,2026-06-02,12,89.5,75%
+S0020,Aditya Patel,Grade 12,A,Computer Science,Grammar,Assessment 10,2026-06-11,70,100,70,Developing,23,16,7,Chemical Reactions,60%,100,86%,No,2026-06-12,7,67.5,82%
+S0021,Ram Singh,Grade 10,A,Mathematics,Chemistry,Assessment 10,2026-03-27,60,100,60,Developing,28,16,12,Maps,46%,82,58%,No,2026-04-04,4,76.0,86%
+S0022,Akhil Patel,Grade 9,B,Social Studies,Python Basics,Assessment 10,2026-04-14,77,100,77,Proficient,28,21,7,Chemical Reactions,40%,74,72%,Yes,2026-04-19,13,65.5,60%
+S0023,Akhil Rao,Grade 12,A,English,Python Basics,Assessment 10,2026-02-06,87,100,87,Proficient,23,20,3,Graphs,85%,100,58%,No,2026-02-18,8,76.5,52%
+S0024,Ram Rao,Grade 10,A,Mathematics,Data Analysis,Assessment 3,2026-04-28,77,100,77,Proficient,35,26,9,Equations,50%,78,53%,No,2026-05-12,14,66.0,85%
+S0025,Rohit Gupta,Grade 9,C,Mathematics,Data Analysis,Assessment 10,2026-07-05,90,100,90,Advanced,33,29,4,Chemical Reactions,49%,87,50%,No,2026-07-20,9,73.5,49%
+S0026,Sai Reddy,Grade 9,C,Mathematics,Data Analysis,Assessment 9,2026-03-04,64,100,64,Developing,31,19,12,Reading Comprehension,79%,98,100%,No,2026-03-15,14,58.0,67%
+S0027,Sai Patel,Grade 10,B,Science,Python Basics,Assessment 3,2026-02-24,100,100,100,Advanced,25,25,0,Loops,64%,95,61%,No,2026-03-08,3,88.0,46%
+S0028,Varun Patel,Grade 8,C,Science,Physics,Assessment 6,2026-03-09,57,100,57,Beginning,46,26,20,Equations,95%,99,79%,Yes,2026-03-13,4,64.5,64%
+S0029,Kiran Singh,Grade 10,A,Social Studies,Python Basics,Assessment 1,2026-01-17,86,100,86,Proficient,36,30,6,Loops,78%,82,93%,No,2026-01-19,9,85.0,66%
+S0030,Sneha Singh,Grade 8,C,Computer Science,Algebra,Assessment 9,2026-02-27,72,100,72,Developing,39,28,11,Chemical Reactions,83%,86,57%,No,2026-03-04,14,73.0,81%
+S0031,Ram Singh,Grade 8,C,English,History,Assessment 5,2026-03-31,72,100,72,Developing,22,15,7,Reading Comprehension,60%,100,92%,No,2026-04-11,9,71.5,84%
+S0032,Ananya Gupta,Grade 12,B,Computer Science,History,Assessment 1,2026-02-23,53,100,53,Beginning,26,13,13,Equations,58%,83,92%,Yes,2026-03-05,6,63.5,88%
+S0033,Ishita Das,Grade 12,B,Science,Geometry,Assessment 5,2026-07-01,83,100,83,Proficient,40,33,7,Chemical Reactions,82%,80,79%,No,2026-07-05,13,80.5,73%
+S0034,Teja Singh,Grade 9,A,Mathematics,Algebra,Assessment 4,2026-03-30,50,100,50,Beginning,46,23,23,Data Types,79%,100,98%,Yes,2026-04-03,15,57.5,88%
+S0035,Aditya Naidu,Grade 11,B,Science,Reading,Assessment 1,2026-07-07,71,100,71,Developing,48,34,14,Loops,89%,90,86%,No,2026-07-14,9,66.5,90%
+S0036,Indra Sharma,Grade 8,B,Science,Chemistry,Assessment 9,2026-06-01,96,100,96,Advanced,50,48,2,Chemical Reactions,78%,92,83%,No,2026-06-05,8,87.5,48%
+S0037,Rohit Das,Grade 9,C,Computer Science,Chemistry,Assessment 5,2026-05-30,97,100,97,Advanced,43,41,2,Graphs,93%,98,82%,No,2026-06-07,13,87.0,98%
+S0038,Kiran Gupta,Grade 10,B,English,History,Assessment 2,2026-03-24,76,100,76,Proficient,40,30,10,Grammar,49%,77,67%,No,2026-03-28,6,77.0,49%
+S0039,Meera Sharma,Grade 11,A,Science,Physics,Assessment 7,2026-05-28,90,100,90,Advanced,26,23,3,Maps,100%,72,76%,Yes,2026-06-05,14,83.0,66%
+S0040,Aarav Das,Grade 11,C,Social Studies,Grammar,Assessment 4,2026-04-19,69,100,69,Developing,35,24,11,Data Types,54%,70,72%,Yes,2026-05-03,7,69.0,93%
+S0041,Ishita Naidu,Grade 9,B,Science,Grammar,Assessment 9,2026-04-23,46,100,46,Beginning,32,14,18,Fractions,98%,80,92%,Yes,2026-05-05,9,69.5,96%
+S0042,Harsha Das,Grade 8,B,Computer Science,Data Analysis,Assessment 4,2026-05-08,87,100,87,Proficient,20,17,3,Data Types,60%,72,91%,Yes,2026-05-11,8,82.0,53%
+S0043,Meera Rao,Grade 8,C,Social Studies,Algebra,Assessment 6,2026-01-30,93,100,93,Advanced,50,46,4,Graphs,81%,96,76%,No,2026-02-07,4,79.5,98%
+S0044,Vihaan Reddy,Grade 11,C,Mathematics,Grammar,Assessment 4,2026-03-12,60,100,60,Developing,26,15,11,Data Types,84%,96,51%,No,2026-03-15,7,74.5,54%
+S0045,Sneha Sharma,Grade 8,C,Mathematics,Python Basics,Assessment 10,2026-02-20,83,100,83,Proficient,39,32,7,Reading Comprehension,65%,100,97%,No,2026-02-25,14,89.0,52%
+S0046,Ram Kumar,Grade 10,C,Social Studies,Geometry,Assessment 10,2026-07-07,82,100,82,Proficient,42,34,8,Fractions,62%,96,90%,No,2026-07-20,11,73.5,51%
+S0047,Ishita Singh,Grade 11,A,Computer Science,Data Analysis,Assessment 8,2026-04-27,49,100,49,Beginning,36,17,19,Grammar,67%,90,71%,Yes,2026-05-11,5,49.5,99%
+S0048,Nikhil Rao,Grade 12,B,English,Writing,Assessment 2,2026-05-09,84,100,84,Proficient,45,37,8,Equations,96%,99,84%,No,2026-05-16,10,91.5,75%
+S0049,Indra Naidu,Grade 10,A,Computer Science,Writing,Assessment 6,2026-05-16,81,100,81,Proficient,39,31,8,Equations,61%,91,74%,No,2026-05-30,7,76.0,46%
+S0050,Teja Rao,Grade 12,A,Computer Science,Chemistry,Assessment 8,2026-04-24,80,100,80,Proficient,20,16,4,Fractions,45%,86,62%,No,2026-05-02,7,67.5,60%
+S0051,Indra Verma,Grade 12,B,Computer Science,History,Assessment 6,2026-05-11,89,100,89,Proficient,27,24,3,Variables,84%,79,92%,No,2026-05-20,10,88.0,68%
+S0052,Kiran Rao,Grade 12,C,Science,Writing,Assessment 4,2026-02-09,61,100,61,Developing,27,16,11,Data Types,57%,73,96%,Yes,2026-02-21,14,61.5,65%
+S0053,Harsha Gupta,Grade 10,A,Social Studies,Reading,Assessment 5,2026-04-12,83,100,83,Proficient,29,24,5,Fractions,43%,73,62%,Yes,2026-04-15,11,75.5,59%
+S0054,Ananya Sharma,Grade 10,B,Computer Science,Chemistry,Assessment 6,2026-01-13,85,100,85,Proficient,47,39,8,Grammar,43%,94,81%,No,2026-01-23,7,70.5,100%
+S0055,Varun Kumar,Grade 8,A,Science,Grammar,Assessment 5,2026-06-20,97,100,97,Advanced,22,21,1,Loops,55%,82,81%,No,2026-07-01,4,75.5,81%
+S0056,Akhil Verma,Grade 11,B,English,Grammar,Assessment 7,2026-05-23,83,100,83,Proficient,39,32,7,Equations,76%,95,89%,No,2026-05-30,12,73.5,94%
+S0057,Vihaan Das,Grade 8,A,Science,Reading,Assessment 9,2026-03-05,92,100,92,Advanced,23,21,2,Loops,50%,100,98%,No,2026-03-10,3,77.5,85%
+S0058,Ishita Naidu,Grade 10,C,Computer Science,Geometry,Assessment 4,2026-03-24,89,100,89,Proficient,39,34,5,Equations,90%,85,68%,No,2026-04-05,15,70.5,59%
+S0059,Harsha Patel,Grade 9,A,Mathematics,Reading,Assessment 5,2026-03-19,72,100,72,Developing,23,16,7,Maps,87%,87,64%,No,2026-04-02,12,81.5,54%
+S0060,Ananya Naidu,Grade 12,B,Computer Science,Geometry,Assessment 10,2026-03-20,52,100,52,Beginning,34,17,17,Fractions,96%,92,69%,Yes,2026-03-29,9,73.0,70%
+S0061,Priya Das,Grade 8,C,English,Grammar,Assessment 1,2026-06-06,61,100,61,Developing,20,12,8,Grammar,70%,72,64%,Yes,2026-06-16,11,77.0,98%
+S0062,Rohit Rao,Grade 11,B,English,Geometry,Assessment 3,2026-05-10,56,100,56,Beginning,38,21,17,Variables,66%,83,90%,Yes,2026-05-16,14,68.5,50%
+S0063,Varun Rao,Grade 10,B,English,Geometry,Assessment 7,2026-05-06,87,100,87,Proficient,50,43,7,Chemical Reactions,92%,82,98%,No,2026-05-08,3,86.0,47%
+S0064,Akhil Naidu,Grade 11,A,Science,Python Basics,Assessment 9,2026-05-17,71,100,71,Developing,21,14,7,Grammar,99%,76,83%,No,2026-05-28,7,72.0,84%
+S0065,Rohit Naidu,Grade 12,A,Social Studies,Physics,Assessment 2,2026-02-19,52,100,52,Beginning,20,10,10,Graphs,93%,90,88%,Yes,2026-02-24,4,58.5,90%
+S0066,Rohit Kumar,Grade 10,B,Computer Science,Chemistry,Assessment 4,2026-05-20,86,100,86,Proficient,46,39,7,Data Types,75%,74,81%,Yes,2026-06-01,5,90.5,63%
+S0067,Meera Patel,Grade 12,B,Mathematics,Python Basics,Assessment 5,2026-04-26,83,100,83,Proficient,36,29,7,Maps,77%,93,58%,No,2026-05-02,13,68.5,62%
+S0068,Varun Sharma,Grade 11,B,Science,Writing,Assessment 10,2026-05-29,73,100,73,Developing,37,27,10,Reading Comprehension,54%,85,72%,No,2026-06-05,15,72.0,80%
+S0069,Ishita Reddy,Grade 9,B,Mathematics,Reading,Assessment 9,2026-06-28,65,100,65,Developing,43,27,16,Maps,61%,85,95%,No,2026-07-11,4,69.5,69%
+S0070,Rohit Kumar,Grade 9,A,Computer Science,Python Basics,Assessment 6,2026-04-24,78,100,78,Proficient,49,38,11,Maps,84%,84,50%,No,2026-05-08,9,87.0,54%
+S0071,Aditya Singh,Grade 11,C,Mathematics,Grammar,Assessment 2,2026-06-19,99,100,99,Advanced,41,40,1,Graphs,80%,97,84%,No,2026-07-01,13,86.5,65%
+S0072,Ananya Patel,Grade 8,B,Science,Python Basics,Assessment 1,2026-07-09,92,100,92,Advanced,22,20,2,Fractions,60%,83,56%,No,2026-07-23,15,95.0,85%
+S0073,Vihaan Rao,Grade 9,A,Science,Geometry,Assessment 10,2026-04-25,67,100,67,Developing,31,20,11,Reading Comprehension,79%,83,59%,No,2026-05-05,13,66.0,78%
+S0074,Indra Naidu,Grade 8,B,English,History,Assessment 3,2026-05-07,82,100,82,Proficient,24,19,5,Loops,68%,77,79%,No,2026-05-12,8,86.0,61%
+S0075,Harsha Rao,Grade 11,B,Mathematics,Writing,Assessment 7,2026-03-28,85,100,85,Proficient,50,42,8,Maps,62%,83,94%,No,2026-04-01,12,75.5,74%
+S0076,Ananya Rao,Grade 8,C,Computer Science,Python Basics,Assessment 4,2026-06-03,46,100,46,Beginning,46,21,25,Maps,91%,91,75%,Yes,2026-06-17,8,56.5,45%
+S0077,Indra Patel,Grade 9,C,Mathematics,Algebra,Assessment 5,2026-06-27,84,100,84,Proficient,28,23,5,Data Types,42%,91,98%,No,2026-07-08,12,90.0,94%
+S0078,Sneha Sharma,Grade 9,C,English,History,Assessment 9,2026-02-23,50,100,50,Beginning,49,24,25,Equations,93%,79,70%,Yes,2026-02-27,5,73.5,71%
+S0079,Kiran Naidu,Grade 9,C,Computer Science,History,Assessment 6,2026-01-29,96,100,96,Advanced,29,27,2,Loops,90%,93,71%,No,2026-02-01,9,76.5,74%
+S0080,Aarav Rao,Grade 12,B,English,Geometry,Assessment 4,2026-07-01,79,100,79,Proficient,23,18,5,Data Types,41%,84,73%,No,2026-07-06,12,86.0,92%
+S0081,Akhil Singh,Grade 10,C,Computer Science,Geometry,Assessment 3,2026-05-08,84,100,84,Proficient,27,22,5,Fractions,100%,90,54%,No,2026-05-23,3,87.0,97%
+S0082,Ananya Naidu,Grade 12,B,Social Studies,Reading,Assessment 7,2026-05-06,52,100,52,Beginning,23,11,12,Loops,93%,77,84%,Yes,2026-05-12,10,55.0,69%
+S0083,Teja Verma,Grade 10,A,English,History,Assessment 6,2026-05-03,62,100,62,Developing,21,13,8,Fractions,65%,92,73%,No,2026-05-07,7,62.5,73%
+S0084,Ram Kumar,Grade 12,A,Mathematics,Data Analysis,Assessment 4,2026-06-23,99,100,99,Advanced,46,45,1,Grammar,90%,84,55%,No,2026-07-04,12,95.5,58%
+S0085,Ram Kumar,Grade 9,C,Mathematics,Python Basics,Assessment 3,2026-03-10,98,100,98,Advanced,44,43,1,Grammar,74%,87,63%,No,2026-03-16,7,92.5,58%
+S0086,Rahul Kumar,Grade 10,A,Science,Python Basics,Assessment 1,2026-03-11,87,100,87,Proficient,47,40,7,Grammar,87%,70,58%,Yes,2026-03-21,9,68.5,67%
+S0087,Nikhil Kumar,Grade 8,B,Social Studies,Writing,Assessment 10,2026-05-21,92,100,92,Advanced,22,20,2,Fractions,86%,85,78%,No,2026-05-31,15,95.5,68%
+S0088,Nikhil Rao,Grade 8,B,Computer Science,Geometry,Assessment 2,2026-04-22,74,100,74,Developing,40,29,11,Variables,78%,100,51%,No,2026-04-29,5,63.5,75%
+S0089,Aditya Sharma,Grade 12,C,English,Chemistry,Assessment 9,2026-04-03,62,100,62,Developing,39,24,15,Maps,67%,90,87%,No,2026-04-10,4,73.5,90%
+S0090,Arjun Gupta,Grade 11,B,Computer Science,Geometry,Assessment 6,2026-04-25,91,100,91,Advanced,47,42,5,Reading Comprehension,60%,76,77%,No,2026-05-01,13,84.5,59%
+S0091,Kiran Singh,Grade 11,A,English,Reading,Assessment 9,2026-01-31,54,100,54,Beginning,41,22,19,Fractions,77%,99,80%,Yes,2026-02-02,11,54.0,50%
+S0092,Akhil Singh,Grade 8,B,Social Studies,Python Basics,Assessment 6,2026-04-28,87,100,87,Proficient,23,20,3,Loops,76%,83,72%,No,2026-05-12,11,89.5,93%
+S0093,Ram Sharma,Grade 8,B,Social Studies,Writing,Assessment 7,2026-06-01,87,100,87,Proficient,35,30,5,Chemical Reactions,89%,77,56%,No,2026-06-07,12,79.5,99%
+S0094,Teja Gupta,Grade 10,C,English,Data Analysis,Assessment 6,2026-01-17,46,100,46,Beginning,39,17,22,Fractions,51%,99,92%,Yes,2026-01-20,5,70.0,62%
+S0095,Harsha Verma,Grade 11,B,Computer Science,Data Analysis,Assessment 3,2026-05-25,49,100,49,Beginning,24,11,13,Variables,59%,93,90%,Yes,2026-05-29,14,50.0,50%
+S0096,Priya Das,Grade 8,B,Computer Science,Physics,Assessment 8,2026-06-17,83,100,83,Proficient,22,18,4,Maps,68%,98,53%,No,2026-06-18,9,71.0,55%
+S0097,Kiran Patel,Grade 12,B,Social Studies,Python Basics,Assessment 1,2026-03-23,93,100,93,Advanced,36,33,3,Graphs,65%,73,72%,Yes,2026-04-03,12,85.0,52%
+S0098,Vihaan Reddy,Grade 10,A,Mathematics,Chemistry,Assessment 7,2026-03-16,58,100,58,Beginning,29,16,13,Grammar,48%,100,63%,Yes,2026-03-21,9,78.5,53%
+S0099,Akhil Patel,Grade 8,B,Mathematics,Chemistry,Assessment 2,2026-04-21,77,100,77,Proficient,37,28,9,Variables,76%,96,92%,No,2026-05-05,9,74.5,49%
+S0100,Harsha Verma,Grade 9,C,Computer Science,Data Analysis,Assessment 2,2026-01-15,90,100,90,Advanced,40,36,4,Reading Comprehension,94%,83,68%,No,2026-01-21,4,73.5,70%
+S0101,Indra Verma,Grade 10,A,English,Reading,Assessment 2,2026-03-30,82,100,82,Proficient,32,26,6,Chemical Reactions,80%,86,55%,No,2026-04-11,4,78.5,100%
+S0102,Nikhil Gupta,Grade 9,A,Mathematics,Reading,Assessment 5,2026-06-24,57,100,57,Beginning,48,27,21,Graphs,51%,94,72%,Yes,2026-07-08,12,64.5,91%
+S0103,Sai Kumar,Grade 12,B,Social Studies,Grammar,Assessment 6,2026-06-03,56,100,56,Beginning,50,28,22,Variables,49%,94,90%,Yes,2026-06-16,10,68.5,74%
+S0104,Aditya Naidu,Grade 12,A,English,Chemistry,Assessment 8,2026-01-24,73,100,73,Developing,40,29,11,Fractions,43%,79,100%,No,2026-01-30,8,70.0,82%
+S0105,Ananya Kumar,Grade 11,C,Social Studies,Algebra,Assessment 8,2026-05-19,86,100,86,Proficient,47,40,7,Maps,81%,97,55%,No,2026-05-26,6,87.5,83%
+S0106,Priya Das,Grade 8,C,Science,Algebra,Assessment 4,2026-04-07,75,100,75,Proficient,36,27,9,Data Types,68%,74,53%,Yes,2026-04-19,11,76.5,51%
+S0107,Nikhil Das,Grade 12,A,English,Geometry,Assessment 6,2026-04-06,55,100,55,Beginning,31,17,14,Loops,75%,81,68%,Yes,2026-04-17,13,64.5,71%
+S0108,Meera Rao,Grade 8,C,Science,Data Analysis,Assessment 5,2026-02-17,61,100,61,Developing,43,26,17,Reading Comprehension,48%,97,92%,No,2026-02-23,12,74.5,100%
+S0109,Aditya Rao,Grade 12,A,Computer Science,History,Assessment 6,2026-02-11,80,100,80,Proficient,32,25,7,Fractions,63%,90,100%,No,2026-02-22,7,75.5,97%
+S0110,Rahul Patel,Grade 8,B,Mathematics,History,Assessment 9,2026-02-14,66,100,66,Developing,50,33,17,Chemical Reactions,42%,94,81%,No,2026-02-17,13,64.0,59%
+S0111,Priya Das,Grade 12,A,Computer Science,Algebra,Assessment 7,2026-07-06,53,100,53,Beginning,39,20,19,Variables,83%,82,59%,Yes,2026-07-19,14,56.5,56%
+S0112,Indra Naidu,Grade 9,B,Computer Science,Writing,Assessment 6,2026-03-10,84,100,84,Proficient,29,24,5,Maps,68%,94,97%,No,2026-03-19,10,92.0,73%
+S0113,Ananya Verma,Grade 10,A,Computer Science,Data Analysis,Assessment 9,2026-06-13,77,100,77,Proficient,36,27,9,Loops,85%,83,60%,No,2026-06-16,11,69.5,96%
+S0114,Arjun Rao,Grade 11,A,Science,Chemistry,Assessment 6,2026-02-16,50,100,50,Beginning,44,22,22,Fractions,66%,75,67%,Yes,2026-03-02,3,64.0,77%
+S0115,Meera Gupta,Grade 8,C,English,Reading,Assessment 3,2026-01-17,68,100,68,Developing,27,18,9,Fractions,58%,82,55%,No,2026-01-23,10,70.5,59%
+S0116,Sai Naidu,Grade 9,C,Social Studies,History,Assessment 7,2026-03-06,73,100,73,Developing,39,28,11,Loops,89%,70,55%,Yes,2026-03-20,7,62.0,61%
+S0117,Indra Rao,Grade 8,A,Computer Science,Grammar,Assessment 9,2026-06-18,52,100,52,Beginning,21,10,11,Fractions,80%,77,76%,Yes,2026-06-26,11,71.0,95%
+S0118,Harsha Patel,Grade 12,B,Science,Geometry,Assessment 9,2026-04-10,90,100,90,Advanced,24,21,3,Variables,44%,79,77%,No,2026-04-14,11,70.0,84%
+S0119,Akhil Gupta,Grade 11,B,English,Algebra,Assessment 6,2026-05-10,95,100,95,Advanced,36,34,2,Loops,62%,87,51%,No,2026-05-11,6,84.5,100%
+S0120,Arjun Das,Grade 9,C,Computer Science,Chemistry,Assessment 3,2026-05-29,92,100,92,Advanced,44,40,4,Grammar,44%,80,58%,No,2026-06-04,14,72.0,67%
