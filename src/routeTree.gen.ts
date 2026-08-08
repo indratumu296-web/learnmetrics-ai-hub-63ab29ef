@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AnalyticsRouteImport } from './routes/analytics'
+import { Route as AssistantRouteImport } from './routes/assistant'
 import { Route as CalendarRouteImport } from './routes/calendar'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as StudentRouteImport } from './routes/student'
@@ -29,6 +30,11 @@ const AdminRoute = AdminRouteImport.update({
 const AnalyticsRoute = AnalyticsRouteImport.update({
   id: '/analytics',
   path: '/analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AssistantRoute = AssistantRouteImport.update({
+  id: '/assistant',
+  path: '/assistant',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CalendarRoute = CalendarRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
   '/analytics': typeof AnalyticsRoute
+  '/assistant': typeof AssistantRoute
   '/calendar': typeof CalendarRoute
   '/login': typeof LoginRoute
   '/student': typeof StudentRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
   '/analytics': typeof AnalyticsRoute
+  '/assistant': typeof AssistantRoute
   '/calendar': typeof CalendarRoute
   '/login': typeof LoginRoute
   '/student': typeof StudentRoute
@@ -68,20 +76,36 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
   '/analytics': typeof AnalyticsRoute
+  '/assistant': typeof AssistantRoute
   '/calendar': typeof CalendarRoute
   '/login': typeof LoginRoute
   '/student': typeof StudentRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/admin' | '/analytics' | '/calendar' | '/login' | '/student'
+  fullPaths:
+    | '/'
+    | '/admin'
+    | '/analytics'
+    | '/assistant'
+    | '/calendar'
+    | '/login'
+    | '/student'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/admin' | '/analytics' | '/calendar' | '/login' | '/student'
+  to:
+    | '/'
+    | '/admin'
+    | '/analytics'
+    | '/assistant'
+    | '/calendar'
+    | '/login'
+    | '/student'
   id:
     | '__root__'
     | '/'
     | '/admin'
     | '/analytics'
+    | '/assistant'
     | '/calendar'
     | '/login'
     | '/student'
@@ -91,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRoute
   AnalyticsRoute: typeof AnalyticsRoute
+  AssistantRoute: typeof AssistantRoute
   CalendarRoute: typeof CalendarRoute
   LoginRoute: typeof LoginRoute
   StudentRoute: typeof StudentRoute
@@ -117,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/analytics'
       fullPath: '/analytics'
       preLoaderRoute: typeof AnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/assistant': {
+      id: '/assistant'
+      path: '/assistant'
+      fullPath: '/assistant'
+      preLoaderRoute: typeof AssistantRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/calendar': {
@@ -147,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRoute,
   AnalyticsRoute: AnalyticsRoute,
+  AssistantRoute: AssistantRoute,
   CalendarRoute: CalendarRoute,
   LoginRoute: LoginRoute,
   StudentRoute: StudentRoute,
