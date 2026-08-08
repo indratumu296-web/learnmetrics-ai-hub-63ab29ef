@@ -14,7 +14,190 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      attendance: {
+        Row: {
+          attendance_percentage: number
+          created_at: string
+          id: string
+          last_activity: string
+          practice_completed: number
+          recorded_on: string | null
+          student_id: string
+          weekly_progress: number
+        }
+        Insert: {
+          attendance_percentage?: number
+          created_at?: string
+          id?: string
+          last_activity?: string
+          practice_completed?: number
+          recorded_on?: string | null
+          student_id: string
+          weekly_progress?: number
+        }
+        Update: {
+          attendance_percentage?: number
+          created_at?: string
+          id?: string
+          last_activity?: string
+          practice_completed?: number
+          recorded_on?: string | null
+          student_id?: string
+          weekly_progress?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "attendance_student_id_fkey"
+            columns: ["student_id"]
+            isOneToOne: false
+            referencedRelation: "students"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      import_runs: {
+        Row: {
+          attendance_written: number
+          created_at: string
+          error_message: string | null
+          file_name: string
+          id: string
+          marks_written: number
+          rows_read: number
+          status: string
+          students_written: number
+        }
+        Insert: {
+          attendance_written?: number
+          created_at?: string
+          error_message?: string | null
+          file_name?: string
+          id?: string
+          marks_written?: number
+          rows_read?: number
+          status?: string
+          students_written?: number
+        }
+        Update: {
+          attendance_written?: number
+          created_at?: string
+          error_message?: string | null
+          file_name?: string
+          id?: string
+          marks_written?: number
+          rows_read?: number
+          status?: string
+          students_written?: number
+        }
+        Relationships: []
+      }
+      marks: {
+        Row: {
+          assessed_on: string | null
+          assignment: string
+          attempted: number
+          average_score: number
+          correct: number
+          created_at: string
+          id: string
+          incorrect: number
+          mastery: string
+          missed_facts: string
+          percentage: number
+          progress: number
+          score: number
+          skill: string
+          student_id: string
+          subject: string
+          test_count: number
+        }
+        Insert: {
+          assessed_on?: string | null
+          assignment?: string
+          attempted?: number
+          average_score?: number
+          correct?: number
+          created_at?: string
+          id?: string
+          incorrect?: number
+          mastery?: string
+          missed_facts?: string
+          percentage?: number
+          progress?: number
+          score?: number
+          skill?: string
+          student_id: string
+          subject?: string
+          test_count?: number
+        }
+        Update: {
+          assessed_on?: string | null
+          assignment?: string
+          attempted?: number
+          average_score?: number
+          correct?: number
+          created_at?: string
+          id?: string
+          incorrect?: number
+          mastery?: string
+          missed_facts?: string
+          percentage?: number
+          progress?: number
+          score?: number
+          skill?: string
+          student_id?: string
+          subject?: string
+          test_count?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "marks_student_id_fkey"
+            columns: ["student_id"]
+            isOneToOne: false
+            referencedRelation: "students"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      students: {
+        Row: {
+          class_name: string
+          created_at: string
+          grade: string
+          id: string
+          mastery: string
+          name: string
+          needs_attention: boolean
+          skill: string
+          subject: string
+          updated_at: string
+        }
+        Insert: {
+          class_name?: string
+          created_at?: string
+          grade?: string
+          id: string
+          mastery?: string
+          name: string
+          needs_attention?: boolean
+          skill?: string
+          subject?: string
+          updated_at?: string
+        }
+        Update: {
+          class_name?: string
+          created_at?: string
+          grade?: string
+          id?: string
+          mastery?: string
+          name?: string
+          needs_attention?: boolean
+          skill?: string
+          subject?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
