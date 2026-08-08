@@ -21,6 +21,7 @@ const nav = [
   { to: "/analytics", label: "Analytics", icon: BarChart3 },
   { to: "/calendar", label: "Calendar", icon: CalendarDays },
   { to: "/assistant", label: "AI Assistant", icon: Bot },
+  { to: "/admin/import", label: "CSV Import", icon: UploadCloud },
 ] as const;
 
 export function AppShell({
