@@ -1,7 +1,12 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
+import type { Database } from "@/integrations/supabase/types";
 import { parseCsv } from "@/lib/csv-parse";
+
+type StudentRow = Database["public"]["Tables"]["students"]["Insert"];
+type MarkRow = Database["public"]["Tables"]["marks"]["Insert"];
+type AttendanceRow = Database["public"]["Tables"]["attendance"]["Insert"];
 
 const inputSchema = z.object({
   passcode: z.string().min(1),
@@ -43,9 +48,9 @@ export const importStudentCsv = createServerFn({ method: "POST" })
       return { ok: false as const, error: "Missing required column: student_id." };
     }
 
-    const studentMap = new Map<string, Record<string, unknown>>();
-    const marks: Record<string, unknown>[] = [];
-    const attendance: Record<string, unknown>[] = [];
+    const studentMap = new Map<string, StudentRow>();
+    const marks: MarkRow[] = [];
+    const attendance: AttendanceRow[] = [];
     const seenMarks = new Set<string>();
     const seenAttendance = new Set<string>();
 
