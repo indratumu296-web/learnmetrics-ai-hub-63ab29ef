@@ -22,7 +22,9 @@ import {
 } from "recharts";
 
 import { AppShell } from "@/components/AppShell";
+import { RequireRole } from "@/components/RequireRole";
 import { StatCard } from "@/components/StatCard";
+import { useSession } from "@/lib/session";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
