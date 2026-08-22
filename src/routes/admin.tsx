@@ -22,7 +22,9 @@ import {
 } from "recharts";
 
 import { AppShell } from "@/components/AppShell";
+import { RequireRole } from "@/components/RequireRole";
 import { StatCard } from "@/components/StatCard";
+import { useSession } from "@/lib/session";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -56,8 +58,20 @@ export const Route = createFileRoute("/admin")({
       { property: "og:description", content: "Cohort KPIs, student records and at-risk monitoring." },
     ],
   }),
-  component: AdminDashboard,
+  component: AdminRoute,
 });
+
+function AdminRoute() {
+  const session = useSession();
+  if (session?.role !== "admin") {
+    return (
+      <AppShell title="Admin & Faculty Dashboard" subtitle="Restricted area">
+        <RequireRole role="admin">{null}</RequireRole>
+      </AppShell>
+    );
+  }
+  return <AdminDashboard />;
+}
 
 const PAGE_SIZE = 10;
 
