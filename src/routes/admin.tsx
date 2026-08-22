@@ -56,8 +56,20 @@ export const Route = createFileRoute("/admin")({
       { property: "og:description", content: "Cohort KPIs, student records and at-risk monitoring." },
     ],
   }),
-  component: AdminDashboard,
+  component: AdminRoute,
 });
+
+function AdminRoute() {
+  const session = useSession();
+  if (session?.role !== "admin") {
+    return (
+      <AppShell title="Admin & Faculty Dashboard" subtitle="Restricted area">
+        <RequireRole role="admin">{null}</RequireRole>
+      </AppShell>
+    );
+  }
+  return <AdminDashboard />;
+}
 
 const PAGE_SIZE = 10;
 
