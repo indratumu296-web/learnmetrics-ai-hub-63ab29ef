@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 
 import { AppShell } from "@/components/AppShell";
+import { useSession } from "@/lib/session";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -83,6 +84,9 @@ function monthLabel(m: string) {
 }
 
 function CalendarPage() {
+  const session = useSession();
+  const isAdmin = session?.role === "admin";
+
   const [events, setEvents] = useState<CalendarEvent[]>(SEED_EVENTS);
   const [hydrated, setHydrated] = useState(false);
   const [month, setMonth] = useState(BASE_MONTHS[2]!);
@@ -180,73 +184,75 @@ function CalendarPage() {
           </button>
         ))}
 
-        <Dialog open={open} onOpenChange={setOpen}>
-          <DialogTrigger asChild>
-            <Button className="ml-auto">
-              <CalendarPlus className="size-4" />
-              Add an event
-            </Button>
-          </DialogTrigger>
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>Add an event</DialogTitle>
-              <DialogDescription>
-                Events you add appear on the calendar and stay saved on this device.
-              </DialogDescription>
-            </DialogHeader>
-            <div className="grid gap-4">
-              <div className="grid gap-2">
-                <Label htmlFor="event-date">Date</Label>
-                <Input
-                  id="event-date"
-                  type="date"
-                  value={form.date}
-                  onChange={(e) => setForm((f) => ({ ...f, date: e.target.value }))}
-                />
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="event-title">Title</Label>
-                <Input
-                  id="event-title"
-                  placeholder="Science exhibition"
-                  value={form.title}
-                  onChange={(e) => setForm((f) => ({ ...f, title: e.target.value }))}
-                />
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="event-kind">Type</Label>
-                <Select
-                  value={form.kind}
-                  onValueChange={(v) => setForm((f) => ({ ...f, kind: v as EventKind }))}
-                >
-                  <SelectTrigger id="event-kind">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="event">Campus event</SelectItem>
-                    <SelectItem value="assessment">Assessment</SelectItem>
-                    <SelectItem value="holiday">Holiday</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="event-notes">Notes (optional)</Label>
-                <Textarea
-                  id="event-notes"
-                  rows={3}
-                  value={form.notes}
-                  onChange={(e) => setForm((f) => ({ ...f, notes: e.target.value }))}
-                />
-              </div>
-            </div>
-            <DialogFooter>
-              <Button variant="outline" onClick={() => setOpen(false)}>
-                Cancel
+        {isAdmin && hydrated && (
+          <Dialog open={open} onOpenChange={setOpen}>
+            <DialogTrigger asChild>
+              <Button className="ml-auto">
+                <CalendarPlus className="size-4" />
+                Add an event
               </Button>
-              <Button onClick={addEvent}>Save event</Button>
-            </DialogFooter>
-          </DialogContent>
-        </Dialog>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>Add an event</DialogTitle>
+                <DialogDescription>
+                  Events you add appear on the calendar and stay saved on this device.
+                </DialogDescription>
+              </DialogHeader>
+              <div className="grid gap-4">
+                <div className="grid gap-2">
+                  <Label htmlFor="event-date">Date</Label>
+                  <Input
+                    id="event-date"
+                    type="date"
+                    value={form.date}
+                    onChange={(e) => setForm((f) => ({ ...f, date: e.target.value }))}
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <Label htmlFor="event-title">Title</Label>
+                  <Input
+                    id="event-title"
+                    placeholder="Science exhibition"
+                    value={form.title}
+                    onChange={(e) => setForm((f) => ({ ...f, title: e.target.value }))}
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <Label htmlFor="event-kind">Type</Label>
+                  <Select
+                    value={form.kind}
+                    onValueChange={(v) => setForm((f) => ({ ...f, kind: v as EventKind }))}
+                  >
+                    <SelectTrigger id="event-kind">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="event">Campus event</SelectItem>
+                      <SelectItem value="assessment">Assessment</SelectItem>
+                      <SelectItem value="holiday">Holiday</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="grid gap-2">
+                  <Label htmlFor="event-notes">Notes (optional)</Label>
+                  <Textarea
+                    id="event-notes"
+                    rows={3}
+                    value={form.notes}
+                    onChange={(e) => setForm((f) => ({ ...f, notes: e.target.value }))}
+                  />
+                </div>
+              </div>
+              <DialogFooter>
+                <Button variant="outline" onClick={() => setOpen(false)}>
+                  Cancel
+                </Button>
+                <Button onClick={addEvent}>Save event</Button>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
+        )}
       </div>
 
       <Card>
@@ -298,7 +304,9 @@ function CalendarPage() {
         </CardHeader>
         <CardContent>
           {monthEvents.length === 0 ? (
-            <p className="text-sm text-muted-foreground">No events yet. Use “Add an event” to create one.</p>
+            <p className="text-sm text-muted-foreground">
+              {isAdmin && hydrated ? 'No events yet. Use “Add an event” to create one.' : 'No events scheduled this month.'}
+            </p>
           ) : (
             <ul className="divide-y">
               {monthEvents.map((e) => (
@@ -318,14 +326,16 @@ function CalendarPage() {
                       {e.notes ? ` — ${e.notes}` : ""}
                     </p>
                   </div>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    aria-label={`Delete ${e.title}`}
-                    onClick={() => removeEvent(e.id)}
-                  >
-                    <Trash2 className="size-4" />
-                  </Button>
+                  {isAdmin && hydrated && (
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      aria-label={`Delete ${e.title}`}
+                      onClick={() => removeEvent(e.id)}
+                    >
+                      <Trash2 className="size-4" />
+                    </Button>
+                  )}
                 </li>
               ))}
             </ul>
