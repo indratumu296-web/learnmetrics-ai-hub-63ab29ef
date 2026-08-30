@@ -304,7 +304,9 @@ function CalendarPage() {
         </CardHeader>
         <CardContent>
           {monthEvents.length === 0 ? (
-            <p className="text-sm text-muted-foreground">No events yet. Use “Add an event” to create one.</p>
+            <p className="text-sm text-muted-foreground">
+              {isAdmin && hydrated ? 'No events yet. Use “Add an event” to create one.' : 'No events scheduled this month.'}
+            </p>
           ) : (
             <ul className="divide-y">
               {monthEvents.map((e) => (
@@ -324,14 +326,16 @@ function CalendarPage() {
                       {e.notes ? ` — ${e.notes}` : ""}
                     </p>
                   </div>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    aria-label={`Delete ${e.title}`}
-                    onClick={() => removeEvent(e.id)}
-                  >
-                    <Trash2 className="size-4" />
-                  </Button>
+                  {isAdmin && hydrated && (
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      aria-label={`Delete ${e.title}`}
+                      onClick={() => removeEvent(e.id)}
+                    >
+                      <Trash2 className="size-4" />
+                    </Button>
+                  )}
                 </li>
               ))}
             </ul>
