@@ -84,6 +84,9 @@ function monthLabel(m: string) {
 }
 
 function CalendarPage() {
+  const session = useSession();
+  const isAdmin = session?.role === "admin";
+
   const [events, setEvents] = useState<CalendarEvent[]>(SEED_EVENTS);
   const [hydrated, setHydrated] = useState(false);
   const [month, setMonth] = useState(BASE_MONTHS[2]!);
